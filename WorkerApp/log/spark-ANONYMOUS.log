@@ -1,0 +1,579 @@
+05 dez 2018;18:03:15.857 INFO  org.apache.spark.SparkContext - Running Spark version 1.5.0
+05 dez 2018;18:03:16.123 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:03:16.214 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:03:16.215 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:03:16.238 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:03:16.239 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:03:16.241 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:03:16.765 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:03:16.811 INFO  Remoting - Starting remoting
+05 dez 2018;18:03:16.962 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:46809]
+05 dez 2018;18:03:16.970 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 46809.
+05 dez 2018;18:03:16.998 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:03:17.014 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:03:17.041 INFO  o.a.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-9b8669b2-6327-4fca-be63-6de9b0b6be0b
+05 dez 2018;18:03:17.055 INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 1912.4 MB
+05 dez 2018;18:03:17.129 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-6c607539-aa36-4007-9f00-94c91d9dfce6/httpd-c908c350-6304-436b-8645-bbc064d329d2
+05 dez 2018;18:03:17.133 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:03:17.179 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:03:17.191 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:45767
+05 dez 2018;18:03:17.192 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 45767.
+05 dez 2018;18:03:17.210 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:03:17.307 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:03:17.325 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:03:17.325 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:03:17.327 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:03:17.408 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:03:17.415 INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+05 dez 2018;18:03:17.603 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43715.
+05 dez 2018;18:03:17.605 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 43715
+05 dez 2018;18:03:17.606 INFO  o.a.spark.storage.BlockManagerMaster - Trying to register BlockManager
+05 dez 2018;18:03:17.609 INFO  o.a.s.s.BlockManagerMasterEndpoint - Registering block manager localhost:43715 with 1912.4 MB RAM, BlockManagerId(driver, localhost, 43715)
+05 dez 2018;18:03:17.611 INFO  o.a.spark.storage.BlockManagerMaster - Registered BlockManager
+05 dez 2018;18:03:17.814 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:03:17.819 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:03:17.856 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:03:17.856 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:03:17.858 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:03:17.862 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:03:17.865 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:03:17.866 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:03:17.867 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:04:00.538 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:39
+05 dez 2018;18:04:00.593 INFO  o.a.spark.scheduler.DAGScheduler - Got job 0 (foreach at AppModel.java:39) with 4 output partitions
+05 dez 2018;18:04:00.594 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 0(foreach at AppModel.java:39)
+05 dez 2018;18:04:00.595 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:04:00.597 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:04:00.625 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:39), which has no missing parents
+05 dez 2018;18:04:00.989 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=0, maxMem=2005307228
+05 dez 2018;18:04:01.013 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:04:01.038 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=2240, maxMem=2005307228
+05 dez 2018;18:04:01.047 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:04:01.055 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:43715 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:04:01.057 INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:04:01.064 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:39)
+05 dez 2018;18:04:01.066 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 4 tasks
+05 dez 2018;18:04:01.142 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:04:01.147 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:04:01.150 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 0.0 (TID 2, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:04:01.152 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 0.0 (TID 3, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:04:01.158 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+05 dez 2018;18:04:01.165 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+05 dez 2018;18:04:01.171 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 0.0 (TID 2)
+05 dez 2018;18:04:01.174 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 0.0 (TID 3)
+05 dez 2018;18:04:01.219 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 915 bytes result sent to driver
+05 dez 2018;18:04:01.220 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 0.0 (TID 3). 915 bytes result sent to driver
+05 dez 2018;18:04:01.224 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 915 bytes result sent to driver
+05 dez 2018;18:04:01.225 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 0.0 (TID 2). 915 bytes result sent to driver
+05 dez 2018;18:04:01.238 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 141 ms on localhost (1/4)
+05 dez 2018;18:04:01.239 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 95 ms on localhost (2/4)
+05 dez 2018;18:04:01.239 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 0.0 (TID 3) in 89 ms on localhost (3/4)
+05 dez 2018;18:04:01.240 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 0.0 (TID 2) in 92 ms on localhost (4/4)
+05 dez 2018;18:04:01.241 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+05 dez 2018;18:04:01.242 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 0 (foreach at AppModel.java:39) finished in 0,155 s
+05 dez 2018;18:04:01.246 INFO  o.a.spark.scheduler.DAGScheduler - Job 0 finished: foreach at AppModel.java:39, took 0,688752 s
+05 dez 2018;18:05:00.045 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:39
+05 dez 2018;18:05:00.052 INFO  o.a.spark.scheduler.DAGScheduler - Got job 1 (foreach at AppModel.java:39) with 4 output partitions
+05 dez 2018;18:05:00.052 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 1(foreach at AppModel.java:39)
+05 dez 2018;18:05:00.053 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:05:00.054 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:05:00.056 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (ParallelCollectionRDD[1] at parallelize at AppRepository.java:39), which has no missing parents
+05 dez 2018;18:05:00.064 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=3692, maxMem=2005307228
+05 dez 2018;18:05:00.066 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:05:00.068 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=5932, maxMem=2005307228
+05 dez 2018;18:05:00.070 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:05:00.071 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on localhost:43715 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:05:00.072 INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:05:00.073 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 1 (ParallelCollectionRDD[1] at parallelize at AppRepository.java:39)
+05 dez 2018;18:05:00.073 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 4 tasks
+05 dez 2018;18:05:00.075 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 4, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:05:00.077 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 5, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:05:00.085 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 1.0 (TID 6, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:05:00.087 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 1.0 (TID 7, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:05:00.087 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 4)
+05 dez 2018;18:05:00.091 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 4). 915 bytes result sent to driver
+05 dez 2018;18:05:00.091 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 5)
+05 dez 2018;18:05:00.095 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 1.0 (TID 6)
+05 dez 2018;18:05:00.099 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 1.0 (TID 6). 915 bytes result sent to driver
+05 dez 2018;18:05:00.095 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 1.0 (TID 7)
+05 dez 2018;18:05:00.102 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 1.0 (TID 7). 915 bytes result sent to driver
+05 dez 2018;18:05:00.105 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 5). 915 bytes result sent to driver
+05 dez 2018;18:05:00.105 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 4) in 31 ms on localhost (1/4)
+05 dez 2018;18:05:00.105 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 1.0 (TID 6) in 28 ms on localhost (2/4)
+05 dez 2018;18:05:00.106 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 1.0 (TID 7) in 19 ms on localhost (3/4)
+05 dez 2018;18:05:00.107 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 5) in 31 ms on localhost (4/4)
+05 dez 2018;18:05:00.107 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 1 (foreach at AppModel.java:39) finished in 0,034 s
+05 dez 2018;18:05:00.107 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+05 dez 2018;18:05:00.107 INFO  o.a.spark.scheduler.DAGScheduler - Job 1 finished: foreach at AppModel.java:39, took 0,061165 s
+05 dez 2018;18:05:00.163 INFO  org.apache.spark.ContextCleaner - Cleaned accumulator 2
+05 dez 2018;18:05:00.169 INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_1_piece0 on localhost:43715 in memory (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:05:00.174 INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on localhost:43715 in memory (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:05:00.174 INFO  org.apache.spark.ContextCleaner - Cleaned accumulator 1
+05 dez 2018;18:06:00.043 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:39
+05 dez 2018;18:06:00.049 INFO  o.a.spark.scheduler.DAGScheduler - Got job 2 (foreach at AppModel.java:39) with 4 output partitions
+05 dez 2018;18:06:00.049 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 2(foreach at AppModel.java:39)
+05 dez 2018;18:06:00.050 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:06:00.051 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:06:00.055 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (ParallelCollectionRDD[2] at parallelize at AppRepository.java:39), which has no missing parents
+05 dez 2018;18:06:00.064 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=0, maxMem=2005307228
+05 dez 2018;18:06:00.065 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:06:00.068 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=2240, maxMem=2005307228
+05 dez 2018;18:06:00.069 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:06:00.071 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on localhost:43715 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:06:00.073 INFO  org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:06:00.073 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 2 (ParallelCollectionRDD[2] at parallelize at AppRepository.java:39)
+05 dez 2018;18:06:00.074 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 4 tasks
+05 dez 2018;18:06:00.076 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 8, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:06:00.078 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 2.0 (TID 9, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:06:00.080 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 2.0 (TID 10, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:06:00.081 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 2.0 (TID 11, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:06:00.082 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 8)
+05 dez 2018;18:06:00.089 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 8). 915 bytes result sent to driver
+05 dez 2018;18:06:00.089 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 2.0 (TID 9)
+05 dez 2018;18:06:00.091 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 2.0 (TID 10)
+05 dez 2018;18:06:00.096 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 2.0 (TID 11)
+05 dez 2018;18:06:00.098 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 2.0 (TID 9). 915 bytes result sent to driver
+05 dez 2018;18:06:00.099 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 8) in 24 ms on localhost (1/4)
+05 dez 2018;18:06:00.106 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 2.0 (TID 9) in 28 ms on localhost (2/4)
+05 dez 2018;18:06:00.106 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 2.0 (TID 10). 915 bytes result sent to driver
+05 dez 2018;18:06:00.107 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 2.0 (TID 11). 915 bytes result sent to driver
+05 dez 2018;18:06:00.107 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 2.0 (TID 10) in 29 ms on localhost (3/4)
+05 dez 2018;18:06:00.108 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 2.0 (TID 11) in 28 ms on localhost (4/4)
+05 dez 2018;18:06:00.108 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 2 (foreach at AppModel.java:39) finished in 0,032 s
+05 dez 2018;18:06:00.109 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+05 dez 2018;18:06:00.109 INFO  o.a.spark.scheduler.DAGScheduler - Job 2 finished: foreach at AppModel.java:39, took 0,064639 s
+05 dez 2018;18:06:00.150 INFO  org.apache.spark.ContextCleaner - Cleaned accumulator 3
+05 dez 2018;18:06:00.152 INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_2_piece0 on localhost:43715 in memory (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:06:22.251 INFO  org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+05 dez 2018;18:06:22.264 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:06:22.264 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:06:22.264 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:06:22.268 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:06:22.268 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:06:22.321 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:06:22.325 INFO  o.a.spark.scheduler.DAGScheduler - Stopping DAGScheduler
+05 dez 2018;18:06:22.393 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:06:22.421 INFO  org.apache.spark.storage.MemoryStore - MemoryStore cleared
+05 dez 2018;18:06:22.423 INFO  o.apache.spark.storage.BlockManager - BlockManager stopped
+05 dez 2018;18:06:22.429 INFO  o.a.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+05 dez 2018;18:06:22.436 INFO  o.a.s.s.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+05 dez 2018;18:06:22.441 INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+05 dez 2018;18:06:22.442 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:06:22.448 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-6c607539-aa36-4007-9f00-94c91d9dfce6
+05 dez 2018;18:06:27.520 INFO  org.apache.spark.SparkContext - Running Spark version 1.5.0
+05 dez 2018;18:06:27.812 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:06:27.893 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:06:27.899 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:06:27.928 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:06:27.929 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:06:27.930 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:06:28.517 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:06:28.552 INFO  Remoting - Starting remoting
+05 dez 2018;18:06:28.726 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:33847]
+05 dez 2018;18:06:28.738 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 33847.
+05 dez 2018;18:06:28.775 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:06:28.794 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:06:28.820 INFO  o.a.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-97827c57-f980-42b9-8066-b848bd15ba31
+05 dez 2018;18:06:28.834 INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 1912.4 MB
+05 dez 2018;18:06:28.899 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-cffbfe13-945c-4956-a486-5421bb077ce8/httpd-558a76d0-bd50-432d-8eaa-45a2b9e70b5c
+05 dez 2018;18:06:28.903 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:06:28.969 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:06:28.987 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:46637
+05 dez 2018;18:06:28.988 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 46637.
+05 dez 2018;18:06:29.008 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:06:29.113 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:06:29.126 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:06:29.127 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:06:29.129 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:06:29.230 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:06:29.237 INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+05 dez 2018;18:06:29.367 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44895.
+05 dez 2018;18:06:29.368 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 44895
+05 dez 2018;18:06:29.369 INFO  o.a.spark.storage.BlockManagerMaster - Trying to register BlockManager
+05 dez 2018;18:06:29.372 INFO  o.a.s.s.BlockManagerMasterEndpoint - Registering block manager localhost:44895 with 1912.4 MB RAM, BlockManagerId(driver, localhost, 44895)
+05 dez 2018;18:06:29.373 INFO  o.a.spark.storage.BlockManagerMaster - Registered BlockManager
+05 dez 2018;18:06:29.535 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:06:29.538 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:06:29.572 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:06:29.573 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:06:29.575 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:06:29.576 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:06:29.576 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:06:29.576 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:06:29.576 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:07:00.509 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:40
+05 dez 2018;18:07:00.531 INFO  o.a.spark.scheduler.DAGScheduler - Got job 0 (foreach at AppModel.java:40) with 4 output partitions
+05 dez 2018;18:07:00.531 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 0(foreach at AppModel.java:40)
+05 dez 2018;18:07:00.532 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:07:00.533 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:07:00.559 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:39), which has no missing parents
+05 dez 2018;18:07:00.769 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=0, maxMem=2005307228
+05 dez 2018;18:07:00.771 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:07:00.784 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=2240, maxMem=2005307228
+05 dez 2018;18:07:00.785 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:07:00.788 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:44895 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:07:00.791 INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:07:00.795 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:39)
+05 dez 2018;18:07:00.797 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 4 tasks
+05 dez 2018;18:07:00.854 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:07:00.858 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:07:00.859 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 0.0 (TID 2, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:07:00.860 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 0.0 (TID 3, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:07:00.865 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+05 dez 2018;18:07:00.872 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+05 dez 2018;18:07:00.875 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 0.0 (TID 2)
+05 dez 2018;18:07:00.883 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 0.0 (TID 3)
+05 dez 2018;18:07:00.932 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 915 bytes result sent to driver
+05 dez 2018;18:07:00.932 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 0.0 (TID 3). 915 bytes result sent to driver
+05 dez 2018;18:07:00.933 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 915 bytes result sent to driver
+05 dez 2018;18:07:00.934 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 0.0 (TID 2). 915 bytes result sent to driver
+05 dez 2018;18:07:00.958 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 0.0 (TID 3) in 97 ms on localhost (1/4)
+05 dez 2018;18:07:00.959 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 143 ms on localhost (2/4)
+05 dez 2018;18:07:00.960 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 103 ms on localhost (3/4)
+05 dez 2018;18:07:00.960 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 0.0 (TID 2) in 102 ms on localhost (4/4)
+05 dez 2018;18:07:00.961 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+05 dez 2018;18:07:00.962 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 0 (foreach at AppModel.java:40) finished in 0,155 s
+05 dez 2018;18:07:00.967 INFO  o.a.spark.scheduler.DAGScheduler - Job 0 finished: foreach at AppModel.java:40, took 0,456772 s
+05 dez 2018;18:07:04.908 INFO  org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+05 dez 2018;18:07:04.926 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:07:04.932 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:07:04.988 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:07:04.998 INFO  o.a.spark.scheduler.DAGScheduler - Stopping DAGScheduler
+05 dez 2018;18:07:05.090 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:07:05.113 INFO  org.apache.spark.storage.MemoryStore - MemoryStore cleared
+05 dez 2018;18:07:05.117 INFO  o.apache.spark.storage.BlockManager - BlockManager stopped
+05 dez 2018;18:07:05.125 INFO  o.a.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+05 dez 2018;18:07:05.139 INFO  o.a.s.s.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+05 dez 2018;18:07:05.140 INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+05 dez 2018;18:07:05.143 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:07:05.148 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-cffbfe13-945c-4956-a486-5421bb077ce8
+05 dez 2018;18:08:03.223 INFO  org.apache.spark.SparkContext - Running Spark version 1.5.0
+05 dez 2018;18:08:03.512 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:08:03.600 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:08:03.601 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:08:03.622 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:08:03.623 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:08:03.624 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:08:04.226 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:08:04.264 INFO  Remoting - Starting remoting
+05 dez 2018;18:08:04.425 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:36081]
+05 dez 2018;18:08:04.427 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 36081.
+05 dez 2018;18:08:04.462 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:08:04.482 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:08:04.508 INFO  o.a.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-e83da6a0-fa79-4c26-8709-64c184a9efeb
+05 dez 2018;18:08:04.522 INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 1912.4 MB
+05 dez 2018;18:08:04.601 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-c3683919-313f-4ae3-bd93-17c2489f98f3/httpd-c2dd4f8d-f454-4d3c-b57f-d76c99f51f57
+05 dez 2018;18:08:04.604 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:08:04.656 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:08:04.688 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:38129
+05 dez 2018;18:08:04.689 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 38129.
+05 dez 2018;18:08:04.705 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:08:04.825 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:08:04.839 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:08:04.839 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:08:04.841 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:08:04.953 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:08:04.958 INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+05 dez 2018;18:08:05.142 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46035.
+05 dez 2018;18:08:05.143 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 46035
+05 dez 2018;18:08:05.144 INFO  o.a.spark.storage.BlockManagerMaster - Trying to register BlockManager
+05 dez 2018;18:08:05.148 INFO  o.a.s.s.BlockManagerMasterEndpoint - Registering block manager localhost:46035 with 1912.4 MB RAM, BlockManagerId(driver, localhost, 46035)
+05 dez 2018;18:08:05.153 INFO  o.a.spark.storage.BlockManagerMaster - Registered BlockManager
+05 dez 2018;18:08:05.378 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:08:05.382 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:08:05.408 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:08:05.409 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:08:05.410 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:08:05.412 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:08:05.412 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:08:05.412 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:08:05.413 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:09:00.436 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:39
+05 dez 2018;18:09:00.457 INFO  o.a.spark.scheduler.DAGScheduler - Got job 0 (foreach at AppModel.java:39) with 4 output partitions
+05 dez 2018;18:09:00.458 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 0(foreach at AppModel.java:39)
+05 dez 2018;18:09:00.458 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:09:00.459 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:09:00.487 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:41), which has no missing parents
+05 dez 2018;18:09:00.677 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=0, maxMem=2005307228
+05 dez 2018;18:09:00.683 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:09:00.699 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=2240, maxMem=2005307228
+05 dez 2018;18:09:00.700 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:09:00.702 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:46035 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:09:00.716 INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:09:00.720 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:41)
+05 dez 2018;18:09:00.721 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 4 tasks
+05 dez 2018;18:09:00.783 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:09:00.790 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:09:00.792 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 0.0 (TID 2, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:09:00.794 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 0.0 (TID 3, localhost, PROCESS_LOCAL, 2165 bytes)
+05 dez 2018;18:09:00.799 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+05 dez 2018;18:09:00.806 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+05 dez 2018;18:09:00.812 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 0.0 (TID 2)
+05 dez 2018;18:09:00.816 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 0.0 (TID 3)
+05 dez 2018;18:09:00.881 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 915 bytes result sent to driver
+05 dez 2018;18:09:00.881 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 915 bytes result sent to driver
+05 dez 2018;18:09:00.887 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 0.0 (TID 2). 915 bytes result sent to driver
+05 dez 2018;18:09:00.887 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 0.0 (TID 3). 915 bytes result sent to driver
+05 dez 2018;18:09:00.910 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 118 ms on localhost (1/4)
+05 dez 2018;18:09:00.910 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 0.0 (TID 2) in 119 ms on localhost (2/4)
+05 dez 2018;18:09:00.911 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 169 ms on localhost (3/4)
+05 dez 2018;18:09:00.917 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 0 (foreach at AppModel.java:39) finished in 0,170 s
+05 dez 2018;18:09:00.922 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 0.0 (TID 3) in 121 ms on localhost (4/4)
+05 dez 2018;18:09:00.922 INFO  o.a.spark.scheduler.DAGScheduler - Job 0 finished: foreach at AppModel.java:39, took 0,485585 s
+05 dez 2018;18:09:00.925 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+05 dez 2018;18:09:00.956 INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on localhost:46035 in memory (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:09:00.962 INFO  org.apache.spark.ContextCleaner - Cleaned accumulator 1
+05 dez 2018;18:10:00.083 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:39
+05 dez 2018;18:10:00.086 INFO  o.a.spark.scheduler.DAGScheduler - Got job 1 (foreach at AppModel.java:39) with 4 output partitions
+05 dez 2018;18:10:00.087 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 1(foreach at AppModel.java:39)
+05 dez 2018;18:10:00.087 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:10:00.087 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:10:00.088 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (ParallelCollectionRDD[1] at parallelize at AppRepository.java:41), which has no missing parents
+05 dez 2018;18:10:00.095 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=0, maxMem=2005307228
+05 dez 2018;18:10:00.099 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:10:00.106 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=2240, maxMem=2005307228
+05 dez 2018;18:10:00.106 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:10:00.107 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on localhost:46035 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:10:00.108 INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:10:00.108 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 1 (ParallelCollectionRDD[1] at parallelize at AppRepository.java:41)
+05 dez 2018;18:10:00.108 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 4 tasks
+05 dez 2018;18:10:00.110 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 4, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:10:00.111 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 5, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:10:00.112 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 1.0 (TID 6, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:10:00.113 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 1.0 (TID 7, localhost, PROCESS_LOCAL, 2165 bytes)
+05 dez 2018;18:10:00.114 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 4)
+05 dez 2018;18:10:00.114 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 5)
+05 dez 2018;18:10:00.116 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 1.0 (TID 6)
+05 dez 2018;18:10:00.116 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 1.0 (TID 7)
+05 dez 2018;18:10:00.123 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 1.0 (TID 6). 915 bytes result sent to driver
+05 dez 2018;18:10:00.123 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 1.0 (TID 7). 915 bytes result sent to driver
+05 dez 2018;18:10:00.124 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 4). 915 bytes result sent to driver
+05 dez 2018;18:10:00.124 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 5). 915 bytes result sent to driver
+05 dez 2018;18:10:00.126 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 1.0 (TID 7) in 14 ms on localhost (1/4)
+05 dez 2018;18:10:00.126 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 1.0 (TID 6) in 15 ms on localhost (2/4)
+05 dez 2018;18:10:00.129 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 4) in 20 ms on localhost (3/4)
+05 dez 2018;18:10:00.130 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 5) in 20 ms on localhost (4/4)
+05 dez 2018;18:10:00.131 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+05 dez 2018;18:10:00.131 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 1 (foreach at AppModel.java:39) finished in 0,022 s
+05 dez 2018;18:10:00.131 INFO  o.a.spark.scheduler.DAGScheduler - Job 1 finished: foreach at AppModel.java:39, took 0,046909 s
+05 dez 2018;18:10:00.239 INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_1_piece0 on localhost:46035 in memory (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:10:00.239 INFO  org.apache.spark.ContextCleaner - Cleaned accumulator 2
+05 dez 2018;18:10:38.738 INFO  org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+05 dez 2018;18:10:38.755 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:10:38.755 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:10:38.756 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:10:38.758 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:10:38.759 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:10:38.760 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:10:38.760 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:10:38.761 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:10:38.761 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:10:38.761 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:10:38.762 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:10:38.762 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:10:38.763 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:10:38.763 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:10:38.763 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:10:38.764 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:10:38.764 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:10:38.766 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:10:38.766 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:10:38.766 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:10:38.767 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:10:38.823 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:10:38.835 INFO  o.a.spark.scheduler.DAGScheduler - Stopping DAGScheduler
+05 dez 2018;18:10:38.946 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:10:38.982 INFO  org.apache.spark.storage.MemoryStore - MemoryStore cleared
+05 dez 2018;18:10:38.982 INFO  o.apache.spark.storage.BlockManager - BlockManager stopped
+05 dez 2018;18:10:38.986 INFO  o.a.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+05 dez 2018;18:10:38.989 INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+05 dez 2018;18:10:38.989 INFO  o.a.s.s.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+05 dez 2018;18:10:38.990 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:10:38.991 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-c3683919-313f-4ae3-bd93-17c2489f98f3
+05 dez 2018;18:10:43.877 INFO  org.apache.spark.SparkContext - Running Spark version 1.5.0
+05 dez 2018;18:10:44.143 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:10:44.267 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:10:44.268 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:10:44.290 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:10:44.291 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:10:44.292 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:10:44.971 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:10:45.030 INFO  Remoting - Starting remoting
+05 dez 2018;18:10:45.259 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:45729]
+05 dez 2018;18:10:45.264 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 45729.
+05 dez 2018;18:10:45.288 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:10:45.308 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:10:45.366 INFO  o.a.spark.storage.DiskBlockManager - Created local directory at /tmp/blockmgr-fb4991a8-3cf7-4288-915b-66e923418566
+05 dez 2018;18:10:45.382 INFO  org.apache.spark.storage.MemoryStore - MemoryStore started with capacity 1912.4 MB
+05 dez 2018;18:10:45.459 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-67537748-89fa-49cb-869d-a96c3a7aef61/httpd-d6ac1bb5-0dc9-4c65-a4c4-9f337969eff2
+05 dez 2018;18:10:45.464 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:10:45.534 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:10:45.554 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:42387
+05 dez 2018;18:10:45.554 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 42387.
+05 dez 2018;18:10:45.565 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:10:45.688 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:10:45.708 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:10:45.708 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:10:45.712 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:10:45.787 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:10:45.791 INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host localhost
+05 dez 2018;18:10:45.943 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35653.
+05 dez 2018;18:10:45.944 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 35653
+05 dez 2018;18:10:45.945 INFO  o.a.spark.storage.BlockManagerMaster - Trying to register BlockManager
+05 dez 2018;18:10:45.948 INFO  o.a.s.s.BlockManagerMasterEndpoint - Registering block manager localhost:35653 with 1912.4 MB RAM, BlockManagerId(driver, localhost, 35653)
+05 dez 2018;18:10:45.950 INFO  o.a.spark.storage.BlockManagerMaster - Registered BlockManager
+05 dez 2018;18:10:46.156 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:10:46.161 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:10:46.199 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:10:46.200 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:10:46.202 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:10:46.203 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:10:46.203 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:10:46.203 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:10:46.204 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:11:00.399 INFO  org.apache.spark.SparkContext - Starting job: foreach at AppModel.java:39
+05 dez 2018;18:11:00.422 INFO  o.a.spark.scheduler.DAGScheduler - Got job 0 (foreach at AppModel.java:39) with 4 output partitions
+05 dez 2018;18:11:00.423 INFO  o.a.spark.scheduler.DAGScheduler - Final stage: ResultStage 0(foreach at AppModel.java:39)
+05 dez 2018;18:11:00.423 INFO  o.a.spark.scheduler.DAGScheduler - Parents of final stage: List()
+05 dez 2018;18:11:00.424 INFO  o.a.spark.scheduler.DAGScheduler - Missing parents: List()
+05 dez 2018;18:11:00.449 INFO  o.a.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:41), which has no missing parents
+05 dez 2018;18:11:00.671 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(2240) called with curMem=0, maxMem=2005307228
+05 dez 2018;18:11:00.673 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 2.2 KB, free 1912.4 MB)
+05 dez 2018;18:11:00.686 INFO  org.apache.spark.storage.MemoryStore - ensureFreeSpace(1452) called with curMem=2240, maxMem=2005307228
+05 dez 2018;18:11:00.687 INFO  org.apache.spark.storage.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 1452.0 B, free 1912.4 MB)
+05 dez 2018;18:11:00.691 INFO  o.a.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:35653 (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:11:00.694 INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+05 dez 2018;18:11:00.698 INFO  o.a.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 0 (ParallelCollectionRDD[0] at parallelize at AppRepository.java:41)
+05 dez 2018;18:11:00.699 INFO  o.a.s.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 4 tasks
+05 dez 2018;18:11:00.749 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:11:00.753 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:11:00.755 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 0.0 (TID 2, localhost, PROCESS_LOCAL, 2087 bytes)
+05 dez 2018;18:11:00.757 INFO  o.a.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 0.0 (TID 3, localhost, PROCESS_LOCAL, 2165 bytes)
+05 dez 2018;18:11:00.762 INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+05 dez 2018;18:11:00.768 INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 0.0 (TID 2)
+05 dez 2018;18:11:00.768 INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 0.0 (TID 1)
+05 dez 2018;18:11:00.771 INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 0.0 (TID 3)
+05 dez 2018;18:11:00.826 INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 0.0 (TID 1). 915 bytes result sent to driver
+05 dez 2018;18:11:00.826 INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 0.0 (TID 3). 915 bytes result sent to driver
+05 dez 2018;18:11:00.826 INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 915 bytes result sent to driver
+05 dez 2018;18:11:00.826 INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 0.0 (TID 2). 915 bytes result sent to driver
+05 dez 2018;18:11:00.848 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 0.0 (TID 3) in 92 ms on localhost (1/4)
+05 dez 2018;18:11:00.849 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 130 ms on localhost (2/4)
+05 dez 2018;18:11:00.850 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 0.0 (TID 2) in 95 ms on localhost (3/4)
+05 dez 2018;18:11:00.853 INFO  o.a.spark.scheduler.DAGScheduler - ResultStage 0 (foreach at AppModel.java:39) finished in 0,131 s
+05 dez 2018;18:11:00.858 INFO  o.a.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 100 ms on localhost (4/4)
+05 dez 2018;18:11:00.858 INFO  o.a.spark.scheduler.DAGScheduler - Job 0 finished: foreach at AppModel.java:39, took 0,457945 s
+05 dez 2018;18:11:00.859 INFO  o.a.s.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+05 dez 2018;18:11:00.975 INFO  o.a.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on localhost:35653 in memory (size: 1452.0 B, free: 1912.4 MB)
+05 dez 2018;18:11:00.987 INFO  org.apache.spark.ContextCleaner - Cleaned accumulator 1
+05 dez 2018;18:11:11.392 INFO  org.apache.spark.SparkContext - Invoking stop() from shutdown hook
+05 dez 2018;18:11:11.405 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:11:11.462 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:11:11.464 INFO  o.a.spark.scheduler.DAGScheduler - Stopping DAGScheduler
+05 dez 2018;18:11:11.529 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:11:11.546 INFO  org.apache.spark.storage.MemoryStore - MemoryStore cleared
+05 dez 2018;18:11:11.547 INFO  o.apache.spark.storage.BlockManager - BlockManager stopped
+05 dez 2018;18:11:11.549 INFO  o.a.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+05 dez 2018;18:11:11.552 INFO  o.a.s.s.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+05 dez 2018;18:11:11.552 INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+05 dez 2018;18:11:11.552 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:11:11.553 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-67537748-89fa-49cb-869d-a96c3a7aef61

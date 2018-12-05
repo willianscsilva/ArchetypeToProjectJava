@@ -1,0 +1,280 @@
+05 dez 2018;18:03:16.123 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:03:16.214 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:03:16.215 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:03:16.238 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:03:16.239 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:03:16.241 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:03:16.765 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:03:16.811 INFO  Remoting - Starting remoting
+05 dez 2018;18:03:16.962 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:46809]
+05 dez 2018;18:03:16.970 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 46809.
+05 dez 2018;18:03:16.998 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:03:17.014 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:03:17.129 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-6c607539-aa36-4007-9f00-94c91d9dfce6/httpd-c908c350-6304-436b-8645-bbc064d329d2
+05 dez 2018;18:03:17.133 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:03:17.179 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:03:17.191 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:45767
+05 dez 2018;18:03:17.192 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 45767.
+05 dez 2018;18:03:17.210 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:03:17.307 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:03:17.325 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:03:17.325 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:03:17.327 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:03:17.408 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:03:17.603 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43715.
+05 dez 2018;18:03:17.605 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 43715
+05 dez 2018;18:03:17.814 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:03:17.819 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:03:17.856 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:03:17.856 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:03:17.858 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:03:17.862 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:03:17.865 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:03:17.866 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:03:17.867 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:06:22.264 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:06:22.264 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:06:22.264 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:06:22.265 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:06:22.266 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:06:22.267 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:06:22.268 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:06:22.268 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:06:22.321 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:06:22.393 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:06:22.442 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:06:22.448 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-6c607539-aa36-4007-9f00-94c91d9dfce6
+05 dez 2018;18:06:27.812 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:06:27.893 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:06:27.899 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:06:27.928 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:06:27.929 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:06:27.930 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:06:28.517 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:06:28.552 INFO  Remoting - Starting remoting
+05 dez 2018;18:06:28.726 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:33847]
+05 dez 2018;18:06:28.738 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 33847.
+05 dez 2018;18:06:28.775 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:06:28.794 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:06:28.899 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-cffbfe13-945c-4956-a486-5421bb077ce8/httpd-558a76d0-bd50-432d-8eaa-45a2b9e70b5c
+05 dez 2018;18:06:28.903 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:06:28.969 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:06:28.987 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:46637
+05 dez 2018;18:06:28.988 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 46637.
+05 dez 2018;18:06:29.008 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:06:29.113 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:06:29.126 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:06:29.127 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:06:29.129 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:06:29.230 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:06:29.367 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44895.
+05 dez 2018;18:06:29.368 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 44895
+05 dez 2018;18:06:29.535 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:06:29.538 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:06:29.572 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:06:29.573 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:06:29.575 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:06:29.576 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:06:29.576 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:06:29.576 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:06:29.576 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:07:04.926 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:07:04.927 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:07:04.928 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:07:04.929 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:07:04.930 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:07:04.931 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:07:04.932 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:07:04.988 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:07:05.090 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:07:05.143 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:07:05.148 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-cffbfe13-945c-4956-a486-5421bb077ce8
+05 dez 2018;18:08:03.512 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:08:03.600 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:08:03.601 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:08:03.622 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:08:03.623 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:08:03.624 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:08:04.226 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:08:04.264 INFO  Remoting - Starting remoting
+05 dez 2018;18:08:04.425 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:36081]
+05 dez 2018;18:08:04.427 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 36081.
+05 dez 2018;18:08:04.462 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:08:04.482 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:08:04.601 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-c3683919-313f-4ae3-bd93-17c2489f98f3/httpd-c2dd4f8d-f454-4d3c-b57f-d76c99f51f57
+05 dez 2018;18:08:04.604 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:08:04.656 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:08:04.688 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:38129
+05 dez 2018;18:08:04.689 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 38129.
+05 dez 2018;18:08:04.705 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:08:04.825 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:08:04.839 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:08:04.839 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:08:04.841 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:08:04.953 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:08:05.142 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46035.
+05 dez 2018;18:08:05.143 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 46035
+05 dez 2018;18:08:05.378 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:08:05.382 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:08:05.408 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:08:05.409 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:08:05.410 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:08:05.412 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:08:05.412 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:08:05.412 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:08:05.413 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:10:38.755 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:10:38.755 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:10:38.756 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:10:38.758 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:10:38.759 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:10:38.760 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:10:38.760 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:10:38.761 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:10:38.761 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:10:38.761 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:10:38.762 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:10:38.762 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:10:38.763 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:10:38.763 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:10:38.763 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:10:38.764 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:10:38.764 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:10:38.765 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:10:38.766 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:10:38.766 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:10:38.766 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:10:38.767 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:10:38.823 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:10:38.946 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:10:38.990 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:10:38.991 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-c3683919-313f-4ae3-bd93-17c2489f98f3
+05 dez 2018;18:10:44.143 WARN  o.a.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+05 dez 2018;18:10:44.267 WARN  org.apache.spark.util.Utils - Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 186.202.101.11 instead (on interface enp0s31f6)
+05 dez 2018;18:10:44.268 WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+05 dez 2018;18:10:44.290 INFO  org.apache.spark.SecurityManager - Changing view acls to: will
+05 dez 2018;18:10:44.291 INFO  org.apache.spark.SecurityManager - Changing modify acls to: will
+05 dez 2018;18:10:44.292 INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(will); users with modify permissions: Set(will)
+05 dez 2018;18:10:44.971 INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+05 dez 2018;18:10:45.030 INFO  Remoting - Starting remoting
+05 dez 2018;18:10:45.259 INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriver@186.202.101.11:45729]
+05 dez 2018;18:10:45.264 INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 45729.
+05 dez 2018;18:10:45.288 INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+05 dez 2018;18:10:45.308 INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+05 dez 2018;18:10:45.459 INFO  org.apache.spark.HttpFileServer - HTTP File server directory is /tmp/spark-67537748-89fa-49cb-869d-a96c3a7aef61/httpd-d6ac1bb5-0dc9-4c65-a4c4-9f337969eff2
+05 dez 2018;18:10:45.464 INFO  org.apache.spark.HttpServer - Starting HTTP Server
+05 dez 2018;18:10:45.534 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:10:45.554 INFO  o.s.jetty.server.AbstractConnector - Started SocketConnector@0.0.0.0:42387
+05 dez 2018;18:10:45.554 INFO  org.apache.spark.util.Utils - Successfully started service 'HTTP file server' on port 42387.
+05 dez 2018;18:10:45.565 INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+05 dez 2018;18:10:45.688 INFO  o.spark-project.jetty.server.Server - jetty-8.y.z-SNAPSHOT
+05 dez 2018;18:10:45.708 INFO  o.s.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:4050
+05 dez 2018;18:10:45.708 INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4050.
+05 dez 2018;18:10:45.712 INFO  org.apache.spark.ui.SparkUI - Started SparkUI at http://186.202.101.11:4050
+05 dez 2018;18:10:45.787 WARN  o.apache.spark.metrics.MetricsSystem - Using default name DAGScheduler for source because spark.app.id is not set.
+05 dez 2018;18:10:45.943 INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35653.
+05 dez 2018;18:10:45.944 INFO  o.a.s.n.n.NettyBlockTransferService - Server created on 35653
+05 dez 2018;18:10:46.156 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+05 dez 2018;18:10:46.161 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+05 dez 2018;18:10:46.199 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+05 dez 2018;18:10:46.200 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+05 dez 2018;18:10:46.202 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+05 dez 2018;18:10:46.203 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+05 dez 2018;18:10:46.203 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+05 dez 2018;18:10:46.203 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+05 dez 2018;18:10:46.204 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+05 dez 2018;18:11:11.405 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/api,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/static,null}
+05 dez 2018;18:11:11.406 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/executors,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/environment,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+05 dez 2018;18:11:11.407 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/storage,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+05 dez 2018;18:11:11.408 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/stages,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+05 dez 2018;18:11:11.409 INFO  o.s.j.server.handler.ContextHandler - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+05 dez 2018;18:11:11.462 INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://186.202.101.11:4050
+05 dez 2018;18:11:11.529 INFO  o.a.s.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+05 dez 2018;18:11:11.552 INFO  o.a.spark.util.ShutdownHookManager - Shutdown hook called
+05 dez 2018;18:11:11.553 INFO  o.a.spark.util.ShutdownHookManager - Deleting directory /tmp/spark-67537748-89fa-49cb-869d-a96c3a7aef61
