@@ -1,0 +1,19 @@
+# Package Files #
+*.jar
+*.war
+*.ear
+
+.idea/
+src/main/main.iml
+
+### Java ###
+*.class
+
+# Logs
+WorkerApp/log/
+
+#Storage
+/storage/
+
+# KDE directory preferences
+.directory

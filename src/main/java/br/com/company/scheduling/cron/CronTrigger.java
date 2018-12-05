@@ -17,7 +17,7 @@ public class CronTrigger{
 	
 	protected static void jobDefinition(){
 		
-		JobKey jobKey2 = new JobKey("cartAbandonmentWorker", "group1");
+		JobKey jobKey2 = new JobKey("jobApp", "group1");
 		jobApp = JobBuilder.newJob(JobApp.class).withIdentity(jobKey2).build();
 
 	}
@@ -26,7 +26,7 @@ public class CronTrigger{
 
 
 		triggerApp = TriggerBuilder.newTrigger()
-				.withIdentity("triggerCartAbandonment", "group1")
+				.withIdentity("triggerApp", "group1")
 				.withSchedule(CronScheduleBuilder.cronSchedule("0 0/1 * * * ?")).build();
 	}
 	
