@@ -1,2 +1,2 @@
-# archetypeToProjectJava
+# ArchetypeToProjectJava
 Archetype to project Java
